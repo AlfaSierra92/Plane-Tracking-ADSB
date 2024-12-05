@@ -18,10 +18,10 @@ from datetime import datetime, timedelta
 from urllib.parse import quote
 
 # Home-coordinates
-home_coords = (, )
+home_coords = (40, 10)
 
 # Log all planes within MaxDistance and MinHeight
-MaxDistance = 7  # Nautical Miles
+MaxDistance = 7  # Km
 MaxHeight = 35000  # Foot
 
 # URL for the local FlightAware PiAware info
