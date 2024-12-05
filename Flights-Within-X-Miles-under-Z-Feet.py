@@ -1,3 +1,16 @@
+"""
+Basic python code example for Real-time Aircraft notifications within
+a specified radius and altitude range. (overhead traffic notification basics)
+
+
+This script retrieves information about aircraft from a local flight tracker
+(PiAware with FlightAware Pro Stick)
+and calculates the distance between the plane's coordinates and a set of home
+coordinates. If the plane is within X miles of the home coordinates and at an
+altitude of Z feet or lower, the flight information is printed to console.
+(Later this will be saved to database...) 
+"""
+
 import requests
 from geopy.distance import geodesic
 import time
