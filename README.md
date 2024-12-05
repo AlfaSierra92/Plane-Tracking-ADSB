@@ -1,2 +1,2 @@
 # Plane-Tracking-ADSB
-Tracking planes that pas over my house with the flightaware pro stick on raspberry pi...
+Tracking planes flying over my house with the sdr on raspberry pi.
