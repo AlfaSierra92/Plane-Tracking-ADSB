@@ -1,0 +1,16 @@
+# /etc/systemd/system/mayday_spotter.service
+[Unit]
+Description=May day spotter
+After=network.target
+
+[Service]
+User=root
+Group=root
+WorkingDirectory=/root/mayday_spotter
+Environment="PATH=/usr/bin:/root/mayday_spotter/env/bin"
+ExecStart=/root/mayday_spotter/env/bin/python3.9 mayday_spotter.py
+ExecReload=/bin/kill -s HUP $MAINPID
+
+[Install]
+WantedBy=multi-user.target
+
